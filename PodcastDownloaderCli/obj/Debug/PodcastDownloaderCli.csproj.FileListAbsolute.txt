@@ -5,3 +5,10 @@ E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownlo
 E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.csproj.CoreCompileInputs.cache
 E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.exe
 E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.pdb
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.exe.config
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.exe
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.pdb
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.csprojResolveAssemblyReference.cache
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.csproj.CoreCompileInputs.cache
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.exe
+E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.pdb
