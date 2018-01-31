@@ -1,5 +1,12 @@
-### simple podcast downloader
+# simple podcast downloader
 
 download latest episodes of podcasts
 
-specify root path in config.txt and specify podcasts in podcasts.txt
+##config.txt
+root=<path>
+###example
+  G:\Podcasts
+##podcasts.txt
+<any name of podcast>, <url>
+###example 
+  giantbombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
