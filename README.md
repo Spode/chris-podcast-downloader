@@ -2,18 +2,18 @@
 
 download latest episodes of podcasts
 
-##config.txt
+## config.txt
 
 `root=<path>`
 
-###example
+### example
 
 G:\Podcasts
 
-##podcasts.txt
+## podcasts.txt
 
 `<any name of podcast>, <url>`
 
-###example 
+### example 
 
 giantbombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
