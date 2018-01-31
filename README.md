@@ -15,6 +15,8 @@ root=G:\Podcasts
 ## podcasts.txt
 ```
 <any name of podcast>, <url>`
+<any name of podcast>, <url>`
+...
 ```
 
 ### example:
