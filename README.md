@@ -8,7 +8,7 @@ download latest episodes of podcasts
 
 ### example
 
-G:\Podcasts
+`root=G:\Podcasts`
 
 ## podcasts.txt
 
@@ -16,4 +16,5 @@ G:\Podcasts
 
 ### example 
 
-giantbombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
+`giant bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast`
+`giant beastcast,https://www.giantbomb.com/podcast-xml/beastcast`
