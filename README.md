@@ -1,13 +1,13 @@
 # simple podcast downloader
 
-download latest episodes of podcasts
+Simple portable podcast downloader for downloading latest episodes. Requires two files `config.txt` and `podcasts.txt`.
 
 ## config.txt
 ```
 root=<path>
 ```
 
-### example
+### example:
 ```
 root=G:\Podcasts
 ```
@@ -17,7 +17,7 @@ root=G:\Podcasts
 <any name of podcast>, <url>`
 ```
 
-### example 
+### example:
 
 ```
 giant bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
