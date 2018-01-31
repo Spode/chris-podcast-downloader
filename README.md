@@ -3,19 +3,23 @@
 download latest episodes of podcasts
 
 ## config.txt
-
-`root=<path>`
+```
+root=<path>
+```
 
 ### example
-
-`root=G:\Podcasts`
+```
+root=G:\Podcasts
+```
 
 ## podcasts.txt
-
-`<any name of podcast>, <url>`
+```
+<any name of podcast>, <url>`
+```
 
 ### example 
 
-`giant bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast`
-
-`giant beastcast,https://www.giantbomb.com/podcast-xml/beastcast`
+```
+giant bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
+giant beastcast,https://www.giantbomb.com/podcast-xml/beastcast
+```
