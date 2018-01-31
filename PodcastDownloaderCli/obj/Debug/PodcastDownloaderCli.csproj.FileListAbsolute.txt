@@ -1,0 +1,7 @@
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.exe.config
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.exe
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\bin\Debug\PodcastDownloaderCli.pdb
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.csprojResolveAssemblyReference.cache
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.csproj.CoreCompileInputs.cache
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.exe
+E:\Programming\PodcastDownloaderCli\PodcastDownloaderCli\obj\Debug\PodcastDownloaderCli.pdb

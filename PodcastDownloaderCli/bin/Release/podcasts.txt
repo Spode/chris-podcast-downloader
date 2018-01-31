@@ -1,0 +1,2 @@
+beastcast,https://www.giantbomb.com/podcast-xml/beastcast
+bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
