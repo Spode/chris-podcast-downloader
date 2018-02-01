@@ -72,7 +72,6 @@ namespace PodcastDownloaderCli
             }
             else // if filename exist, check size of file
             {
-                Console.WriteLine("File exists! Checking local file size with buffer");
                 WebClient client = new WebClient();
                 long length = new System.IO.FileInfo(filePath).Length;
                 Stream myStream = client.OpenRead(uriString);
@@ -85,7 +84,7 @@ namespace PodcastDownloaderCli
 
                     if (!File.Exists(uniqueTitle))
                     {
-                        Console.WriteLine("New episode! Downloading to: " + uniqueTitle);
+                        Console.WriteLine("Local file is different than buffer! Downloading to: " + uniqueTitle);
                         client.DownloadFile(uri, uniqueTitle);
                     }
                 }
