@@ -63,18 +63,18 @@ namespace PodcastDownloaderCli
 
             string filePath = Path.Combine(curPath, fileName);
 
-            if (!File.Exists(curPath))
+            if (!File.Exists(filePath))
             {
                 WebClient client = new WebClient();
                 client.DownloadFile(uri, filePath);
-                Console.WriteLine("New episode found! Downloading to: " + curPath);
+                Console.WriteLine("New episode found! Downloading to: " + filePath);
                 client.Dispose();
             }
             else // if filename exist, check size of file
             {
                 Console.WriteLine("File exists! Checking local file size with buffer");
                 WebClient client = new WebClient();
-                long length = new System.IO.FileInfo(curPath).Length;
+                long length = new System.IO.FileInfo(filePath).Length;
                 Stream myStream = client.OpenRead(uriString);
                 Int64 bytes_total = Convert.ToInt64(client.ResponseHeaders["Content-Length"]);
                 myStream.Close();
