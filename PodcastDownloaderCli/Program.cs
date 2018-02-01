@@ -20,6 +20,8 @@ namespace PodcastDownloaderCli
             {
                 ParseLine(line);
             }
+            Console.WriteLine("Done! Press any key to continue");
+            Console.ReadKey();
         }
 
         private static string[] ReadFile(string podcastFile)
