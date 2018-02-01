@@ -14,14 +14,15 @@ root=G:\Podcasts
 
 ## podcasts.txt
 ```
-<any name of podcast>, <url>
-<any name of podcast>, <url>
+<url>
+<url>
+...
 ```
 
 ### example:
 
 ```
-giant bombcast,https://www.giantbomb.com/podcast-xml/giant-bombcast
-giant beastcast,https://www.giantbomb.com/podcast-xml/beastcast
+https://www.giantbomb.com/podcast-xml/giant-bombcast
+https://www.giantbomb.com/podcast-xml/beastcast
 ```
 
