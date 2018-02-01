@@ -89,7 +89,7 @@ namespace PodcastDownloaderCli
                 }
                 else
                 {
-                    Console.WriteLine("No new episode!");
+                    Console.WriteLine("No new episode found!");
                 }
                 client.Dispose();
             }
