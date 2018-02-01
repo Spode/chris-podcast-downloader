@@ -70,7 +70,7 @@ namespace PodcastDownloaderCli
             }
             else // if filename exist, check size of file
             {
-                Console.WriteLine("Checking file sizes with buffer");
+                Console.WriteLine("File exists! Checking local file size with buffer");
                 WebClient client = new WebClient();
                 long length = new System.IO.FileInfo(curPath).Length;
                 Stream myStream = client.OpenRead(uriString);
@@ -79,17 +79,12 @@ namespace PodcastDownloaderCli
 
                 if (bytes_total != length)
                 {
-                    Console.WriteLine("File size difference " + length + " vs " + bytes_total + ". Testing with unique name.");
                     string uniqueTitle = Path.Combine(podcast, feedItem.PublishDate.ToString("yyyy-MM-dd "), fileName);
 
                     if (!File.Exists(uniqueTitle))
                     {
-                        Console.WriteLine("Unique does not exist. Downloading to: " + uniqueTitle);
+                        Console.WriteLine("New episode! Downloading to: " + uniqueTitle);
                         client.DownloadFile(uri, uniqueTitle);
-                    }
-                    else
-                    {
-
                     }
                 }
                 else
