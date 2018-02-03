@@ -80,7 +80,7 @@ namespace PodcastDownloaderCli
 
                 if (bytes_total != length)
                 {
-                    string uniqueTitle = Path.Combine(podcast, feedItem.PublishDate.ToString("yyyy-MM-dd "), fileName);
+                    string uniqueTitle = Path.Combine(root, podcast, feedItem.PublishDate.ToString("yyyy-MM-dd ") + fileName);
 
                     if (!File.Exists(uniqueTitle))
                     {
