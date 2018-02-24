@@ -12,3 +12,10 @@ E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\Podcas
 E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.csproj.CoreCompileInputs.cache
 E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.exe
 E:\Programming\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.pdb
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\bin\Release\PodcastDownloaderCli.exe.config
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\bin\Release\PodcastDownloaderCli.exe
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\bin\Release\PodcastDownloaderCli.pdb
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.csprojResolveAssemblyReference.cache
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.csproj.CoreCompileInputs.cache
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.exe
+G:\Projects\csharp\simple-podcast-downloader\PodcastDownloaderCli\obj\Release\PodcastDownloaderCli.pdb

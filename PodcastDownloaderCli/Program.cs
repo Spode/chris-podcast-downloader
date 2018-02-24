@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.ServiceModel.Syndication;
+using System.Threading.Tasks;
 using System.Xml;
 
 namespace PodcastDownloaderCli
@@ -10,19 +13,38 @@ namespace PodcastDownloaderCli
     class Program
     {
         public static string root = GetRootPath();
+        public static int count = 0;
+        public static List<string> Episodes = new List<string>();
 
         static void Main(string[] args)
         {
             string file = "podcasts.txt";
             string[] lines = ReadFile(file);
+            
 
             foreach (string line in lines)
             {
                 ParseLine(line);
             }
-            Console.WriteLine("Done! Press any key to continue");
+
+            if (Episodes.Count > 0) {
+
+                Console.WriteLine("New episodes:");
+
+                foreach (string item in Episodes)
+                {
+                    Console.WriteLine(item);
+                }
+
+                //Process.Start(root);
+
+            }
+
+            Console.WriteLine("Done! Press any key to exit program.");            
             Console.ReadKey();
+            Process.Start(root);
         }
+
 
         private static string[] ReadFile(string podcastFile)
         {
@@ -33,6 +55,7 @@ namespace PodcastDownloaderCli
 
         private static void ParseLine(string line)
         {
+            
             Console.WriteLine("Parsing line: " + line);
             XmlReader xmlreader = XmlReader.Create(line);
             SyndicationFeed feed = SyndicationFeed.Load(xmlreader);
@@ -66,9 +89,11 @@ namespace PodcastDownloaderCli
             if (!File.Exists(filePath))
             {
                 WebClient client = new WebClient();
+                Console.WriteLine("New episode of {0} found! Downloading {1}", podcast, fileName);
                 client.DownloadFile(uri, filePath);
-                Console.WriteLine("New episode found! Downloading to: " + filePath);
+                count++;
                 client.Dispose();
+                Episodes.Add(podcast + ": " + fileName);
             }
             else // if filename exist, check size of file
             {
@@ -80,12 +105,20 @@ namespace PodcastDownloaderCli
 
                 if (bytes_total != length)
                 {
-                    string uniqueTitle = Path.Combine(root, podcast, feedItem.PublishDate.ToString("yyyy-MM-dd ") + fileName);
+                    //Console.WriteLine("File exists but difference in size! Checking with unique filename!");
 
-                    if (!File.Exists(uniqueTitle))
+                    string uniqueFilename = feedItem.PublishDate.ToString("yyyy-MM-dd ") + fileName;
+                    string uniqueFilenamePath = Path.Combine(root, podcast, uniqueFilename);
+
+                    if (!File.Exists(uniqueFilenamePath))
                     {
-                        Console.WriteLine("Local file is different than buffer! Downloading to: " + uniqueTitle);
-                        client.DownloadFile(uri, uniqueTitle);
+                        Console.WriteLine("New episode of {0} found! Downloading {1}!", podcast, uniqueFilename);                        
+                        client.DownloadFile(uri, uniqueFilenamePath);
+                        count++;
+                        Episodes.Add(podcast + ": " + uniqueFilename);
+                    } else
+                    {
+                        Console.WriteLine("No new episode found!");
                     }
                 }
                 else

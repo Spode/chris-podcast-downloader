@@ -1,1 +1,1 @@
-root=G:\Podcasts
+root=C:\Podcasts
